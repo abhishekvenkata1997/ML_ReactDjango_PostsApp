@@ -208,7 +208,7 @@ export default function Home() {
           </label>
           <label style={{ display: 'block', margin: '10px 0' }}>
             Images:
-            <input type="file" name="images" onChange={handleFileChange} multiple required style={{ marginLeft: '10px', padding: '5px', borderRadius: '3px', border: '1px solid #ccc' }} />
+            <input type="file" name="images" accept="image/jpeg"  onChange={handleFileChange} multiple required style={{ marginLeft: '10px', padding: '5px', borderRadius: '3px', border: '1px solid #ccc' }} />
           </label>
           <div style={{ marginTop: '10px', display: 'flex', gap: '10px' }}>
             {/* Pass imagePreview state with a specific size to show */}
