@@ -1,0 +1,74 @@
+
+  .post {
+    position: relative; /* Add position relative to the post container */
+    flex: 0 0 calc(33.33% - 20px); /* 3 posts in each row with 20px spacing */
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .postcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Make the postcard take full width of the post */
+    box-sizing: border-box; /* Include padding and border in the total width */
+  }
+  
+  .carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-image-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+  }
+  
+  .prev {
+    left: 4px;
+    transform: translateX(-50%);
+  }
+  
+  .next {
+    right: 4px;
+    transform: translateX(50%);
+  }
+  

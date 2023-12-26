@@ -1,0 +1,56 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    background-color: #3498db; /* Set your header background color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-post-btn {
+    background-color: #2ecc71; /* Set your button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #e74c3c; /* Set cancel button color */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .post {
+    width: auto;
+    height: auto; /* Three posts per line with margin in between */
+    margin-bottom: 2px;
+    box-sizing: border-box;
+  }
+  
+  .post img {
+    width: 100%; /* Make sure the image takes 100% of the parent container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  }
+  
+  h1 {
+    border-bottom: 2px solid #3498db; /* Set your border color for the heading */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
